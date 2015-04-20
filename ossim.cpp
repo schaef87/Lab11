@@ -64,7 +64,7 @@ int main ()
         // Remove the highest priority task in the queue (if any).
 		if ( ! taskPQ.isEmpty() )
         {
-               taskPQ.remove();                        // <--------------------------- add one line of code here
+               task = taskPQ.remove();                        // <--------------------------- add one line of code here
            cout << "dequeued task with priority "
                 << task.priority << " that \n    arrived at minute " << task.arrived << " (waited "
                 << (minute-task.arrived) << " minutes in queue)" << endl;

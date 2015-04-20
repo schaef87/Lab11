@@ -189,6 +189,8 @@ DataType Heap<DataType,KeyType,Comparator>:: remove () throw ( logic_error )
 	size--;
 	clean();
 
+	return insertDataItem;
+
 }
 
 //--------------------------------------------------------------------
